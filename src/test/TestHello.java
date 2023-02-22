@@ -14,10 +14,12 @@ public class TestHello {
    @Test
    public void testHelloWorld()
    {
+     /*
      PrintStream originalOut = System.out;
      ByteArrayOutputStream bos = new ByteArrayOutputStream();
      System.setOut(new PrintStream(bos));
 
+      
      // action
      Hello.main(null);
 
@@ -26,5 +28,9 @@ public class TestHello {
 
      // undo the binding in System
      System.setOut(originalOut);
+     */
+      
+     Hello h = new Hello();
+     assertEquals("Hello Bill", h.sayHello("Bill"));
    }
 }
